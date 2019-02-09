@@ -7,7 +7,8 @@ driver.get('http://www.google.com');
 var By = webdriver.By;
 
 driver.findElement(By.name('q')).sendKeys('wiki');
-driver.findElement(By.name('q')).sendKeys('btnG').click();
+
+driver.findElement(By.name('btnG')).click();
 driver.wait(check_title, 1000);
 
 function check_title(){
@@ -25,6 +26,6 @@ function check_title(){
 	return promise;
 }
 
-driver.findElement(By.name('btnK')).sendKeys('Google Search');
+
 
 
